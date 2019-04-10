@@ -1,3 +1,4 @@
+//https://ide.geeksforgeeks.org/LGAWAJJPxY
 // Author - shreyanshpandey08@gmail.com
 /*
 f(n)= (1) + (2*3) + (4*5*6) ... n
