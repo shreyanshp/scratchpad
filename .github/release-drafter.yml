@@ -1,0 +1,58 @@
+name-template: '$RESOLVED_VERSION 🌈'
+tag-template: '$RESOLVED_VERSION'
+
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'Epic'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+      - 'CRITICAL'
+  - title: '🧰 Maintenance'
+    label: 'chore'
+  - title: '📈 Analytics'
+    label: 'Analytics'
+  - title: '🌐 Localization'
+    label: 'localization'
+  - title: '💳 Card'
+    label: 'Card'
+    
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: minor
+  
+autolabeler:
+  - label: 'chore'
+    branch:
+      - '/eit\/.+/'
+  - label: 'bug'
+    branch:
+      - '/bugfix\/.+/'
+    title:
+      - '/fix/i'
+  - label: 'enhancement'
+    branch:
+      - '/feature\/.+/'
+    body:
+      - '/Feature\/.+/'
+
+template: |
+  ## Changes
+  $CHANGES
+  
