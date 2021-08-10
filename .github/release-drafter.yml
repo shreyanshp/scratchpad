@@ -40,17 +40,17 @@ version-resolver:
 autolabeler:
   - label: 'chore'
     branch:
-      - '/eit\/.+'
+      - 'eit\/.*'
   - label: 'bug'
     branch:
-      - '/bugfix\/.+'
+      - 'bugfix\/.*'
     title:
-      - '/fix.*'
+      - 'fix.*'
   - label: 'enhancement'
     branch:
-      - '/feature\/.+'
+      - 'feature\/.+'
     body:
-      - '/Feature\/.+'
+      - 'feature\/.+'
 
 template: |
   ## Changes
