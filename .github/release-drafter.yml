@@ -38,19 +38,9 @@ version-resolver:
   default: minor
   
 autolabeler:
-  - label: 'chore'
-    branch:
-      - 'eit\/.*'
   - label: 'bug'
     branch:
       - 'bugfix\/.*'
-    title:
-      - 'fix.*'
-  - label: 'enhancement'
-    branch:
-      - 'feature\/.+'
-    body:
-      - 'feature\/.+'
 
 template: |
   ## Changes
