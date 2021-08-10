@@ -37,10 +37,6 @@ version-resolver:
       - 'patch'
   default: minor
   
-autolabeler:
-  - label: 'bug'
-    branch:
-      - 'bugfix\/.*'
 
 template: |
   ## Changes
