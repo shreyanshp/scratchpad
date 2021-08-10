@@ -1,3 +1,3 @@
 # scratchpad
 
-# My Amazing scratchpad
+# My amazing scratchpad
